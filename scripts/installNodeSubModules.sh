@@ -1,12 +1,20 @@
-echo START INSTALLING NPM Modules in $PWD/spcoin-common
-cd ./spcoin-common
-. ./scripts/installNodeSubModules.sh
-cd ..
-echo START INSTALLING NPM Modules in $PWD/spcoin-access-modules
-cd ./spcoin-access-modules
-npm i
-cd ..
-echo START INSTALLING NPM Modules in $PWD/spcoin-with-modules
-cd ./spcoin-weth-module-cjs
-npm i
-cd ..
+exeIfDirExists() {
+    DIRECTORY=$1
+    COMMAND=$2
+    local CURR_DIR=$PWD
+    echo "CURRENT DIRECTORY : $PWD"
+    if [ -d "$DIRECTORY" ]; then
+        echo INSTALLING in: SUB-DIRECTORY $DIRECTORY =====
+        cd $DIRECTORY
+        echo "EXECUTING: $COMMAND"
+        eval $COMMAND
+    else 
+        echo "***ERROR: SUB-DIRECTORY $DIRECTORY NOT FOUND"
+        echo "***ERROR: COMMAND $COMMAND NOT EXECUTED" 
+    fi
+    cd $CURR_DIR
+}
+
+echo "====================== node_modules-dev ================================="
+exeIfDirExists ./spcoin-access-modules "npm i"
+exeIfDirExists ./spcoin-weth-module-cjs "npm i"
