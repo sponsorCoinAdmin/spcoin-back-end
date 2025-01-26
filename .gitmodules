@@ -7,3 +7,6 @@
 [submodule "weth-access-module-es6"]
 	path = weth-access-module-es6
 	url = git@github.com:sponsorCoinAdmin/weth-access-module-es6.git
+[submodule "weth-access-module-cjs"]
+	path = weth-access-module-cjs
+	url = git@github.com:sponsorCoinAdmin/weth-access-module-cjs.git
