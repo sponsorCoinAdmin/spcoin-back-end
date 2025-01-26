@@ -1,0 +1,20 @@
+{
+  "name": "@sponsorcoin/weth-access-module-cjs",
+  "version": "1.0.0",
+  "description": "Wrap and Unwrap Eth",
+  "main": "wethMethods.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "echo 'EXECUTING node_modules-dev/spcoin-weth-module/package.json'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://github.com:sponsorCoinAdmin/spcoin-weth-module.git"
+  },
+  "author": "Robert Lanson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sponsorCoinAdmin/sponsorcoin/spcoin-weth-module-cjs/issues"
+  },
+  "homepage": "https://github.com/sponsorCoinAdmin/spcoin-weth-module#readme"
+}
