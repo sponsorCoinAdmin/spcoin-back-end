@@ -1,9 +1,6 @@
 [submodule "spcoin-access-modules-cjs"]
 	path = spcoin-access-modules-cjs
 	url = git@github.com:sponsorCoinAdmin/spcoin-access-modules-cjs.git
-[submodule "spcoin-weth-module-cjs"]
-	path = spcoin-weth-module-cjs
-	url = git@github.com:sponsorCoinAdmin/spcoin-weth-module-cjs.git
 [submodule "weth-access-module-es6"]
 	path = weth-access-module-es6
 	url = git@github.com:sponsorCoinAdmin/weth-access-module-es6.git
